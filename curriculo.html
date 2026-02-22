@@ -1,0 +1,378 @@
+<!-- Para gerar PDF: https://www.ilovepdf.com/html-to-pdf -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Caio Cunha - Currículo</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.65;
+            color: #1a1a1a;
+            background: #f4f6fb;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        /* ── CABEÇALHO ── */
+        .header-block {
+            background: linear-gradient(135deg, #1c2333 0%, #2d3a50 100%);
+            color: #fff;
+            padding: 36px 52px 28px;
+            margin-bottom: 0;
+        }
+
+        .header-block h1 {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 26pt;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: 0.2px;
+            margin-bottom: 4px;
+        }
+
+        .header-block .subtitle {
+            font-size: 11pt;
+            font-weight: 500;
+            color: #c8d9f8;
+            margin-bottom: 18px;
+            letter-spacing: 0.3px;
+        }
+
+        /* CONTATO no cabeçalho */
+        .contact {
+            font-size: 9pt;
+            color: #dce8ff;
+            padding-top: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .contact a {
+            color: #c8d9f8;
+            text-decoration: underline;
+        }
+
+        /* ── CORPO PRINCIPAL ── */
+        .main-content {
+            background: #fff;
+            padding: 32px 52px 44px;
+            border-top: 4px solid #e8edf8;
+        }
+
+        /* ── SEÇÕES ── */
+        h2 {
+            font-family: 'Inter', Arial, sans-serif;
+            font-size: 8.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            color: #1a56db;
+            border-bottom: 1.5px solid #d0ddf5;
+            padding-bottom: 5px;
+            margin-top: 26px;
+            margin-bottom: 12px;
+        }
+
+        /* RESUMO */
+        .resumo-text {
+            font-size: 10pt;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* FORMAÇÃO */
+        .entry {
+            margin-bottom: 16px;
+        }
+
+        .entry h3 {
+            font-size: 10.5pt;
+            font-weight: 600;
+            color: #111;
+            margin-bottom: 1px;
+        }
+
+        .entry .meta {
+            font-size: 9.5pt;
+            color: #666;
+            margin-bottom: 6px;
+        }
+
+        .entry p {
+            font-size: 10pt;
+            color: #333;
+            margin-bottom: 6px;
+            line-height: 1.65;
+        }
+
+        .entry ul {
+            padding-left: 20px;
+            margin-bottom: 6px;
+        }
+
+        .entry ul li {
+            font-size: 10pt;
+            color: #333;
+            margin-bottom: 3px;
+        }
+
+        .entry .tech {
+            font-size: 9.5pt;
+            color: #555;
+            margin-top: 6px;
+        }
+
+        .entry .repo {
+            font-size: 9.5pt;
+            margin-top: 3px;
+        }
+
+        .entry .repo a {
+            color: #1a56db;
+            text-decoration: underline;
+        }
+
+        /* ── IDIOMAS ── */
+        .lang-entry {
+            margin-bottom: 8px;
+        }
+
+        .lang-name {
+            font-size: 10.5pt;
+            font-weight: 600;
+            color: #1a3a6b;
+        }
+
+        .lang-level {
+            font-size: 10pt;
+            color: #444;
+        }
+
+        .lang-desc {
+            font-size: 9pt;
+            color: #777;
+            font-style: italic;
+            margin-top: 1px;
+        }
+
+        /* ── TECNOLOGIAS ── */
+        .skills-block p {
+            font-size: 10pt;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        /* ── PRINT / PDF ── */
+        @page {
+            margin: 0;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .header-block {
+                padding: 24px 36px 20px;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .main-content {
+                padding: 20px 36px 30px;
+            }
+
+            a {
+                color: inherit !important;
+            }
+
+            .entry .repo a {
+                color: #1a56db !important;
+            }
+
+            .contact a {
+                color: #c8d9f8 !important;
+            }
+
+            h2 {
+                margin-top: 18px;
+                letter-spacing: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO COLORIDO -->
+    <div class="header-block">
+        <h1>Caio dos Santos Cunha</h1>
+        <div class="subtitle">Engenheiro de Software - Bacharelando</div>
+        <div class="contact">
+            Jundiaí, SP &nbsp;|&nbsp;
+            <a href="mailto:caio17.sc@outlook.com">caio17.sc@outlook.com</a> &nbsp;|&nbsp;
+            <a href="https://www.linkedin.com/in/caiodscunha" target="_blank">linkedin.com/in/caiodscunha</a>
+            &nbsp;|&nbsp;
+            <a href="https://github.com/caiodscunha" target="_blank">github.com/caiodscunha</a> &nbsp;|&nbsp;
+            <a href="tel:+5511999628847">+55 11 99962-8847</a> &nbsp;|&nbsp;
+            <a href="index.html" target="_blank">Portfólio</a>
+        </div>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="main-content">
+
+        <h2>Resumo</h2>
+        <p class="resumo-text">
+            Desenvolvedor Backend com experiência em Java, Spring Boot, TypeScript e Node.js, atuando na construção de
+            APIs REST, integrações e autenticação de usuários. Vivência prática em projetos colaborativos com MongoDB,
+            Firebase (Cloud Functions, Firestore) e Oracle SQL. Complemento meu perfil técnico com conhecimentos em
+            análise de dados e visualização com Power BI, DAX e Power Query. Cursando Engenharia de Software na
+            PUC-Campinas (2024–2027) no período matutino, aplico boas práticas de desenvolvimento, testes automatizados
+            e versionamento com Git em ambientes ágeis.
+        </p>
+
+        <h2>Formação</h2>
+        <div class="entry">
+            <h3>Bacharelado em Engenharia de Software</h3>
+            <div class="meta">2024 – 2027 | Pontifícia Universidade Católica de Campinas (PUC-Campinas)</div>
+        </div>
+
+        <h2>Idiomas</h2>
+
+        <div class="lang-entry">
+            <span class="lang-name">Português</span>
+            <span class="lang-level"> — Nativo</span>
+            <div class="lang-desc">Falante nativo, escrita e comunicação profissional fluentes.</div>
+        </div>
+
+        <div class="lang-entry">
+            <span class="lang-name">Inglês</span>
+            <span class="lang-level"> — Intermediário</span>
+            <div class="lang-desc">Leitura e escrita técnica com facilidade; comunicação verbal em desenvolvimento.
+            </div>
+        </div>
+
+        <h2>Experiência</h2>
+
+        <div class="entry">
+            <h3>Desenvolvedor Backend — SafraTech (Rastreabilidade do Morango)</h3>
+            <div class="meta">Set 2025 – Dez 2025 | Projeto Acadêmico</div>
+            <p>
+                Atuei em um projeto colaborativo de desenvolvimento full stack voltado à rastreabilidade do cultivo de
+                morangos, com foco no monitoramento da plantação e no controle de pragas. A aplicação foi projetada
+                para centralizar informações do ciclo produtivo, permitindo o acompanhamento histórico do cultivo e
+                apoiando processos de controle e qualidade.
+            </p>
+            <ul>
+                <li>API REST desenvolvida em Spring Boot com autenticação via JWT.</li>
+                <li>Frontend em React integrado à API.</li>
+                <li>Persistência dos dados em MongoDB pela flexibilidade no armazenamento de informações variáveis.</li>
+                <li>Testes automatizados com JUnit seguindo boas práticas de testes.</li>
+                <li>Versionamento com Git adotando padrões e fluxos recomendados para trabalho em equipe.</li>
+            </ul>
+            <div class="tech"><strong>Tecnologias:</strong> Java, Spring Boot, React, MongoDB, JWT, JUnit, Git.</div>
+            <div class="repo"><strong>Repositório:</strong> <a href="https://github.com/llucascr/PI_IV_ES_TIME-19"
+                    target="_blank">github.com/llucascr/PI_IV_ES_TIME-19</a></div>
+        </div>
+
+        <div class="entry" style="page-break-before: always;">
+            <h3>Desenvolvedor Backend — Projeto Super-ID</h3>
+            <div class="meta">Jan 2025 – Jun 2025 | Projeto Acadêmico</div>
+            <p>
+                Atuei como desenvolvedor backend no projeto acadêmico Super-ID, um aplicativo de gerenciamento seguro de
+                senhas com login via QR Code, desenvolvido em equipe durante seis meses.
+            </p>
+            <ul>
+                <li>Responsável pelas Firebase Cloud Functions em TypeScript.</li>
+                <li>Integração com Firestore e Authentication para garantir segurança e escalabilidade.</li>
+                <li>Contribuição no desenvolvimento mobile em Kotlin.</li>
+                <li>Prototipação no Figma e organização de tarefas no GitHub Projects.</li>
+            </ul>
+            <div class="tech"><strong>Tecnologias:</strong> TypeScript, Firebase (Cloud Functions, Firestore,
+                Authentication), Kotlin, Jetpack Compose, Figma, GitHub Projects.</div>
+            <div class="repo"><strong>Repositório:</strong> <a href="https://github.com/Codenamedarkray/PI3-Turma3-3"
+                    target="_blank">github.com/Codenamedarkray/PI3-Turma3-3</a></div>
+        </div>
+
+        <div class="entry" style="page-break-inside: avoid;">
+            <h3>Desenvolvedor Full Stack — Projeto Future-Bet</h3>
+            <div class="meta">Ago 2024 – Dez 2024 | Projeto Acadêmico</div>
+            <p>
+                Atuei como desenvolvedor full stack em um site de apostas simuladas, com criação e apostas em eventos,
+                envio automatizado de e-mails, carteira virtual, histórico de transações e pesquisa com filtros.
+            </p>
+            <ul>
+                <li>Desenvolvimento backend em TypeScript e Oracle SQL.</li>
+                <li>Implementação de autenticação, controle de eventos e transações.</li>
+                <li>Desenvolvimento frontend com HTML, CSS e Bootstrap.</li>
+                <li>Envio automatizado de e-mails utilizando NodeMailer.</li>
+            </ul>
+            <div class="tech"><strong>Tecnologias:</strong> JavaScript, TypeScript, HTML, CSS, Bootstrap, Oracle SQL,
+                NodeMailer.</div>
+            <div class="repo"><strong>Repositório:</strong> <a
+                    href="https://github.com/Time4PI/Projeto_Integrador_II_Grupo_4"
+                    target="_blank">github.com/Time4PI/Projeto_Integrador_II_Grupo_4</a></div>
+        </div>
+
+        <h2>Tecnologias</h2>
+        <div class="skills-block">
+            <p><strong>Linguagens:</strong> Java, Python, TypeScript</p>
+            <p><strong>Bancos de Dados:</strong> Oracle SQL, MongoDB</p>
+            <p><strong>Ferramentas:</strong> Git, GitHub, Postman, Power BI</p>
+            <p><strong>Técnicas:</strong> Modelagem UML, Testes de Software</p>
+        </div>
+
+        <h2>Cursos e Certificações</h2>
+
+        <div class="entry">
+            <h3>Master Power BI - De A à Z</h3>
+            <div class="meta">Udemy — Fev. 2026</div>
+            <p>Formação em Power BI, com foco em modelagem de dados, DAX, Power Query, criação de dashboards e
+                relatórios interativos, integração com múltiplas fontes de dados e boas práticas de análise para geração
+                de insights.</p>
+        </div>
+
+        <div class="entry">
+            <h3>Riachuelo – Primeiros Passos com Java</h3>
+            <div class="meta">Digital Innovation One (DIO) — Out. 2025</div>
+            <p>
+                Introdução à linguagem Java e ao desenvolvimento backend com Spring Boot. Abordou POO, APIs REST,
+                persistência de dados com JPA e banco H2, e projeto prático de e-commerce com microsserviços integrados
+                por RabbitMQ.
+            </p>
+        </div>
+
+        <div class="entry">
+            <h3>Ri Happy – Frontend do Zero</h3>
+            <div class="meta">Digital Innovation One (DIO) — Dez. 2024</div>
+            <p>Fundamentos do desenvolvimento frontend com HTML, CSS, JavaScript e boas práticas de interface.</p>
+        </div>
+
+        <div class="entry">
+            <h3>Scrum no Contexto do Serviço Público</h3>
+            <div class="meta">Escola Nacional de Administração Pública (ENAP) — Jun. 2024</div>
+            <p>Introdução às metodologias ágeis e aplicação do framework Scrum em ambientes corporativos e
+                institucionais.</p>
+        </div>
+
+    </div><!-- /main-content -->
+
+</body>
+
+</html>
